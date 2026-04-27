@@ -133,10 +133,10 @@
                 <tr>
                     <th>Market Purchase</th><th>Plant Waste</th><th>Total</th>
                     <th>Market Purchase</th><th>Plant Waste</th><th>Total</th>
-                    <th>Recycled Fiber</th><th>Gutter Waste</th><th>Recovery %</th>
+                    <th>Recycled Fiber</th><th>Gutter</th><th>Recovery %</th>
                     <th>Issue Recycled</th><th>Sale Gutter</th>
                     <th>Market Purchase</th><th>Plant Waste</th><th>Total</th>
-                    <th>Recycled Fiber</th><th>Gutter Waste</th>
+                    <th>Recycled Fiber</th><th>Gutter</th>
                 </tr>
             </thead>
             <tbody id="reportDataBody">
@@ -191,7 +191,7 @@
                 else if(cat === "Plant Waste") dailyData[d].mr_plt += qty;
                 else if(cat === "Fiber Recycling Plant") {
                     if(item === "RECYCLED FIBER") dailyData[d].prd_fib += qty;
-                    else if(item === "GUTTER WASTE") dailyData[d].prd_gut += qty;
+                    else if(item === "GUTTER") dailyData[d].prd_gut += qty;
                 }
             });
 
@@ -207,7 +207,7 @@
                 else if(cat === "Plant Waste") dailyData[d].mi_plt += qty;
                 else if(cat === "Fiber Recycling Plant") {
                     if(item === "RECYCLED FIBER") dailyData[d].iss_fib += qty;
-                    else if(item === "GUTTER WASTE") dailyData[d].sale_gut += qty;
+                    else if(item === "GUTTER") dailyData[d].sale_gut += qty;
                 }
             });
 
